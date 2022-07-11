@@ -1,7 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(宽松模式)
 ! Version: 2022071101
-! Homepage: https://raw.githubusercontent.com/kailinda/rules/master/generic(easy).txt
+! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(easy).txt
+
 
 !-核武库
 !--非常规域名
