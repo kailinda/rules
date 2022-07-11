@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(严格模式)
-! Version: 2022071101
+! Version: 2022071102
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt
 
 
