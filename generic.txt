@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: 通用过滤规则
 ! Version: 2022071101
-! Homepage: https://raw.githubusercontent.com/wellser/Rules/master/generic.txt
+! Homepage: https://raw.githubusercontent.com/kailinda/rules/master/generic.txt
 
 !-核武库
 !--非常规域名
