@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Title: 通用过滤规则
+! Title: Adblock通用规则(宽松模式)
 ! Version: 2022071101
 ! Homepage: https://raw.githubusercontent.com/kailinda/rules/master/generic(easy).txt
 
