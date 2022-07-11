@@ -1,0 +1,40 @@
+[Adblock Plus 2.0]
+! Title: 通用过滤规则
+! Version: 2022071101
+! Homepage: https://raw.githubusercontent.com/kailinda/rules/master/generic(strict).txt
+
+!-核武库
+!--非常规域名
+!---所有非常规域名
+/^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$~third-party,~stylesheet,~image,domain=~172.31.40.254|~127.0.0.1
+/^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$third-party
+!---所有非常规端口
+/^https?:\/\/[\w\-\.]+\:(?:(?!(80|443|8080)\b)\d+)\b/$~third-party,~stylesheet,~image
+/^https?:\/\/[\w\-\.]+\:(?:(?!(80|443|8080)\b)\d+)\b/$third-party
+!---所有分析字段、广告字段
+/(?:\b|\_)(?:analysis|analytics?|statistics?|tongji)\d*(?:[^%\w]|(?!.+))/
+/(?:\b|\_)(?:ads|adv|advert?|advertise?|advertise?ment|adsrv|adsrvice|adsrving|adservice|adserver?|adsserving)\d*(?:[^%\w]|(?!.+))/
+
+!-恶意链接
+*@*.exe^
+*@*.apk^
+
+!-恶意域名
+||2345.com^
+||2345.cc^
+||2345.cn^
+||2345.net^
+||cnnic.net.cn^
+||cnnic.cn^
+||cnnic.net^
+||cnnic.com^
+
+!-广告样式
+##[id="x"]
+##a[href*="@"][href$="exe"]
+##a[href*="@"][href$="apk"]
+##[id^="hengfu"],[id="ads"]
+##[class$="_adv"],[class$="-adv"],[class^="adv-"],[class^="adv_"],[id$="_adv"],[id$="-adv"],[id^="adv-"],[id^="adv_"]
+##[class$="_ads"],[class$="-ads"],[class^="ads-"],[class^="ads_"],[id$="_ads"],[id$="-ads"],[id^="ads-"],[id^="ads_"]
+##[class$="_advert"],[class$="-advert"],[class^="advert-"],[class^="advert_"],[id$="_advert"],[id$="-advert"],[id^="advert-"],[id^="advert_"]
+##[title*="广告"],[title*="广告"]>img,[data-original-title*="广告"]>img
