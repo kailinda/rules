@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(严格模式)
-! Version: 2022071103
+! Version: 2022071201
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt
 
 
 !-核武库
 !--非常规域名
 !---所有非常规域名
-/^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$~third-party,~stylesheet,~image,domain=~172.31.40.254
+/^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$~third-party,~stylesheet,~image
 /^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$third-party
 !---所有非常规端口
 /^https?:\/\/[\w\-\.]+\:(?:(?!(80|443|8080)\b)\d+)\b/$~third-party,~stylesheet,~image
@@ -29,6 +29,9 @@
 ||cnnic.cn^
 ||cnnic.net^
 ||cnnic.com^
+||geo2.adobe.com^
+||flash.cn^
+||www.flash.cn^
 
 !-广告样式
 ##[id="x"]

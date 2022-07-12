@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(宽松模式)
-! Version: 2022071101
+! Version: 2022071201
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(easy).txt
 
 
@@ -27,6 +27,9 @@
 ||cnnic.cn^
 ||cnnic.net^
 ||cnnic.com^
+||geo2.adobe.com^
+||flash.cn^
+||www.flash.cn^
 
 !-广告样式
 ##[id="x"]
