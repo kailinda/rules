@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(宽松模式)
-! Version: 2022071201
+! Version: 2022071801
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(easy).txt
 
 
@@ -13,6 +13,8 @@
 !---所有分析字段、广告字段
 /(?:\b|\_)(?:analysis|analytics?|statistics?|tongji)\d*(?:[^%\w]|(?!.+))/
 /(?:\b|\_)(?:ads|adv|advert?|advertise?|advertise?ment|adsrv|adsrvice|adsrving|adservice|adserver?|adsserving)\d*(?:[^%\w]|(?!.+))/
+!---其他字段
+/(?:\b|\_)(?:51la|guanggao)\d*(?:[^%\w]|(?!.+))/
 
 !-恶意链接
 *@*.exe^
