@@ -4841,28 +4841,19 @@
       "version" : "20220615001"
     }, {
       "enabled" : true,
-      "filterId" : 10002,
-      "name" : "➗ Actually Legitimate URL Shortener Tool",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-      "homePage" : "https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english",
-      "timeUpdated" : 1658581158679,
+      "filterId" : 10004,
+      "name" : "CJX's EasyList Lite",
+      "subscriptionUrl" : "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+      "homePage" : "https://github.com/cjx82630/cjxlist",
+      "timeUpdated" : 1658645294277,
       "trusted" : false,
-      "version" : "19July2022v1"
-    }, {
-      "enabled" : true,
-      "filterId" : 10003,
-      "name" : "My AdFilters（for PC）",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt",
-      "homePage" : "https://adf.minggo.eu.org",
-      "timeUpdated" : 1658640744034,
-      "trusted" : false,
-      "version" : "202207240834"
+      "version" : "202012080856"
     } ],
     "dnsFilters" : [ {
       "enabled" : true,
-      "filterId" : 100003,
-      "name" : "UrlHaus",
-      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
+      "filterId" : 100004,
+      "name" : "大萌主",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/jiekouAD.txt"
     }, {
       "enabled" : true,
       "filterId" : 15,
@@ -4875,6 +4866,11 @@
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt"
     }, {
       "enabled" : true,
+      "filterId" : 100003,
+      "name" : "UrlHaus",
+      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
+    }, {
+      "enabled" : true,
       "filterId" : 100001,
       "name" : "CPBLFilters",
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/bongochong/CombinedPrivacyBlockLists@master/cpbl-abp-list.txt"
@@ -4883,11 +4879,6 @@
       "filterId" : 100002,
       "name" : "GoodbyeAds",
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Formats/GoodbyeAds-AdBlock-Filter.txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 100004,
-      "name" : "大萌主",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/jiekouAD.txt"
     }, {
       "enabled" : true,
       "filterId" : 100005,
@@ -4917,10 +4908,10 @@
       "15" : false,
       "16" : false,
       "17" : true,
-      "18" : true,
-      "19" : true,
+      "18" : false,
+      "19" : false,
       "20" : true,
-      "21" : true,
+      "21" : false,
       "22" : true,
       "201" : false,
       "202" : false,
@@ -4978,10 +4969,10 @@
       "120" : false,
       "121" : false,
       "249" : false,
-      "122" : true,
-      "250" : true,
+      "122" : false,
+      "250" : false,
       "123" : false,
-      "251" : false,
+      "251" : true,
       "252" : false,
       "253" : false
     }
