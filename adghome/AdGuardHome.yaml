@@ -110,10 +110,6 @@ filters:
   name: AdGuard DNS filter
   id: 1657419588
 - enabled: true
-  url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts
-  name: The Big List of Hacked Malware Web Sites
-  id: 1657419589
-- enabled: true
   url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
   name: NoCoin Filter List
   id: 1657419590
@@ -146,25 +142,21 @@ filters:
   name: AdAway Default Blocklist
   id: 1658545020
 - enabled: true
-  url: https://cdn.jsdelivr.net/gh/hacamer/filtering@master/hosts
-  name: hacamer(fasterhosts)
-  id: 1658545023
-- enabled: true
   url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
   name: ADgk
   id: 1658545024
-- enabled: true
-  url: https://abp.oisd.nl/basic/
-  name: OISD Blocklist Basic
-  id: 1658545025
 - enabled: true
   url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
   name: Dandelion Sprout's Anti-Malware List
   id: 1658545026
 - enabled: true
-  url: https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
-  name: Scam Blocklist by DurableNapkin
-  id: 1658545028
+  url: https://abp.oisd.nl/
+  name: OISD(full)
+  id: 1658631949
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt
+  name: The-Big-List-of-Hacked-Malware-Web-Sites(Adblist)
+  id: 1658631950
 whitelist_filters: []
 user_rules:
 - '||2345.com^'
