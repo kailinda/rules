@@ -40,10 +40,8 @@ dns:
   - 119.29.29.29
   - 114.114.114.114
   - 101.226.4.6
-  - 9.9.9.10
   - 1.2.4.8
   - 180.76.76.76
-  - 123.125.81.6
   all_servers: false
   fastest_addr: true
   fastest_timeout: 1s
@@ -56,9 +54,9 @@ dns:
   trusted_proxies:
   - 127.0.0.0/8
   - ::1/128
-  cache_size: 41943040
-  cache_ttl_min: 86400
-  cache_ttl_max: 86400
+  cache_size: 4194304000
+  cache_ttl_min: 64800
+  cache_ttl_max: 64800
   cache_optimistic: true
   bogus_nxdomain: []
   aaaa_disabled: true
@@ -98,6 +96,14 @@ tls:
   private_key_path: ""
 filters:
 - enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard DNS filter
+  id: 1
+- enabled: true
+  url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+  name: NoCoin Filter List
+  id: 1655430886
+- enabled: true
   url: https://anti-ad.net/easylist.txt
   name: 'CHN: anti-AD'
   id: 1655430888
@@ -106,57 +112,41 @@ filters:
   name: WindowsSpyBlocker - Hosts spy rules
   id: 1655430891
 - enabled: true
-  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  name: AdGuard DNS filter
-  id: 1657419588
-- enabled: true
-  url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
-  name: NoCoin Filter List
-  id: 1657419590
-- enabled: true
   url: https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
   name: Online Malicious URL Blocklist
-  id: 1657419591
+  id: 1657242527
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-pc.txt
   name: Halflife
-  id: 1657419592
+  id: 1657242528
+- enabled: true
+  url: https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
+  name: GoodbyeAds
+  id: 1657503119
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/bongochong/CombinedPrivacyBlockLists@master/cpbl-abp-list.txt
-  name: CPBLFilters
-  id: 1657539116
-- enabled: true
-  url: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Formats/GoodbyeAds-AdBlock-Filter.txt
-  name: GoodbyeAds
-  id: 1657539117
-- enabled: true
-  url: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-  name: 大萌主
-  id: 1658545018
+  name: CPBLFilter
+  id: 1657588366
 - enabled: true
   url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
   name: Peter Lowe's List
-  id: 1658545019
+  id: 1657588367
 - enabled: true
   url: https://adaway.org/hosts.txt
   name: AdAway Default Blocklist
-  id: 1658545020
+  id: 1657588369
 - enabled: true
-  url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-  name: ADgk
-  id: 1658545024
-- enabled: true
-  url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
-  name: Dandelion Sprout's Anti-Malware List
-  id: 1658545026
-- enabled: true
-  url: https://abp.oisd.nl/
-  name: OISD(full)
-  id: 1658631949
+  url: https://cdn.jsdelivr.net/gh/damengzhu/banad@main/dnslist.txt
+  name: 大萌主
+  id: 1658192474
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt
   name: The-Big-List-of-Hacked-Malware-Web-Sites(Adblist)
-  id: 1658631950
+  id: 1658711431
+- enabled: true
+  url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
+  name: Dandelion Sprout's Anti-Malware List
+  id: 1658711432
 whitelist_filters: []
 user_rules:
 - '||2345.com^'
@@ -170,6 +160,15 @@ user_rules:
 - '||geo2.adobe.com^'
 - '||flash.cn^'
 - '||www.flash.cn^'
+- '||play.kakao.com^'
+- '||adverweb.cjenm.com^'
+- '||videofarm.daum.net^'
+- '||dad.daum.net^'
+- '||play.kakao.com^'
+- '||edge4k.com^'
+- '||potplayer.tv^'
+- '||potplayer.io^'
+- '||potplayer.app^'
 dhcp:
   enabled: false
   interface_name: ""

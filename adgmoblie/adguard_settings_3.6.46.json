@@ -4744,6 +4744,17 @@
     "wifi" : true,
     "wifiScreenOff" : true,
     "default" : false
+  }, {
+    "adBlocking" : true,
+    "httpsFiltering" : true,
+    "mobileData" : true,
+    "mobileDataScreenOff" : true,
+    "packageName" : "com.xbrowser.play",
+    "showFirewallNotifications" : false,
+    "trafficFiltering" : true,
+    "wifi" : true,
+    "wifiScreenOff" : true,
+    "default" : false
   } ],
   "booleanPreferences" : {
     "pref.vpn.capture" : false,
@@ -4816,21 +4827,12 @@
     "application_premium_license_key" : "C3RFC3ZG",
     "stealth_mode_ip_address" : "209.141.53.254",
     "key_https_ca_key" : "-----BEGIN CERTIFICATE-----\nMIIDKDCCAhCgAwIBAgIRAJs5GrSa5lBhyWjOpmLspz4wDQYJKoZIhvcNAQELBQAw\nPTELMAkGA1UEBhMCRU4xEDAOBgNVBAoMB0FkR3VhcmQxHDAaBgNVBAMME0FkR3Vh\ncmQgUGVyc29uYWwgQ0EwHhcNMTgwNDI3MDAwMDAwWhcNMzgwNDIyMDAwMDAwWjA9\nMQswCQYDVQQGEwJFTjEQMA4GA1UECgwHQWRHdWFyZDEcMBoGA1UEAwwTQWRHdWFy\nZCBQZXJzb25hbCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMWE\nk32DrYQv3+VNxu2qfvvNESfHQl5qYlWftQZ0HfQLNsv1vNCGTj0P7TPmkjuar9Y4\nXNJW9HFqKobB8+S0/Ze+6J7KKJpAX3YynfsK0hVDGk1MGPLX3UrnEhP0j+D9QOAr\nCsWhmkXtS4CdvMp8zBSONf9nfEUeGeV1xR/OKJ2AIALDhijPBuDteYX7Esoc93V9\nMinhP83yn95aF2EwkWS/ATOmkIkU23ne6yYclRAsIBVLleL9J2VvampYplvX0zBo\nTduDHJX1qrjnbYLIqmWODG72OLaM+lT/q7vvTKTtXEldc57+FjF3n7rXJSCbYvc9\nebYOBkLuFfkOF5GmiHMCAwEAAaMjMCEwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8B\nAf8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBACzyrTWA/rFvHZApq/B5qFxSqagl\nKVkHdIKQDTWbsbkPVjUMUzFkpJxWWmQcIE35y9mGqoAaXs2/EJx+kUehlP3VhWl7\npTJvNQxbvFAPSagBoOTphJwaNp30vi0hK7hlOeu1vbL/MaVVsk+6KGK0blv/Dy4H\nF/HtC2lo+zzAIuNpxVAatVFoujO6DlKdy/qnTVulEak9zV7GH5331rK10mvlpc6q\nyILZzgcvNF8bgfzLMkVrgP9a41gxNzOmetTUSyglUg03pBQvbjf+kjEwa9nxe2Hm\nqgRFvg7JX8tgi+0ML9M3Fr4R06byHod+WrsDRn1lszYOMsfgZzsDgxUr4BU=\n-----END CERTIFICATE-----\n-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFhJN9g62EL9/l\nTcbtqn77zREnx0JeamJVn7UGdB30CzbL9bzQhk49D+0z5pI7mq/WOFzSVvRxaiqG\nwfPktP2XvuieyiiaQF92Mp37CtIVQxpNTBjy191K5xIT9I/g/UDgKwrFoZpF7UuA\nnbzKfMwUjjX/Z3xFHhnldcUfziidgCACw4Yozwbg7XmF+xLKHPd1fTIp4T/N8p/e\nWhdhMJFkvwEzppCJFNt53usmHJUQLCAVS5Xi/Sdlb2pqWKZb19MwaE3bgxyV9aq4\n522CyKpljgxu9ji2jPpU/6u770yk7VxJXXOe/hYxd5+61yUgm2L3PXm2DgZC7hX5\nDheRpohzAgMBAAECggEASr5Akd6iasMzFrK39HfwVZjkRQlCNDhNvdkRx79pFlCo\nC8aSDNbGBJViTaGS9Ls0jvwFJBODrOdf8F60zHcw/5teq7gUZUq21SOSZM1TcnhS\nG64QQtUtCIsobCS/zYQIaMvg56ifmJaTW7hVGMrg72ZhSKUAgadCZXKLhd2dwPtv\nxKaSz8JwZzchmHjb4U1AMfrkkQE667UJBU0S6OdNZxEOFOVwOQQZtfBaDq7fzFYg\nG8fzbQR1/nADkE2N77L1eSM0gi4MIV3xIU+cmWDt96Nlm5lL355CfHIVdDp3jtQ6\nAIXp/DUlIuAAGKMs1+mOYBUm25cqBUijmHiPX0cyAQKBgQD86KmJ5s/OI7zbIupv\n9w3FEEBeBgMWjn0xI+Z9Rq7fSLQUbgpt7tig9KDrAiYg2coSCaLh10nOkhJ1MYW9\nDiP8PSrfeVPUqGvw2NsVLTxUdWVjWtBZju4VM9Nk8wOCX2uS6mu6Rz1kBmIMwOmv\nStjm2d53n3+R74DUZKnwOh9yGQKBgQDH7pk/ab8jKxwMOSvXvIDP958INVCo8v1P\nvIknQTbQBUQuxmY9X+OCQxLku9Gjf30DSlZLxxPFJDrp/NvZJWTW00Y1gzDI7MX7\n8onjozMSoQhROSfGyLaoExZKWm3QyDFtU7bRbzbwBV/dtIasY5EzrLHY9I28X3TD\nDf1XpzuYawKBgQDh7DUHK1iXHPWoDBjAzEFQuKPHWjeH/uF29EsBvhKZA6laVrKa\nYbLClcTqKpFE50jLtC/87wTPs00pw4Nkzyz2Nu4Fk6x/W7SRAiczU6WBDR31Ezrr\nxfKInjNJCo0n+XVvWFnDncAJimosWmhmXsZD8nv5AFJFW14KXaIxJrrQgQKBgFwD\nsb//mRpEcuolPcpSVS5hlm2eq/q1qmOSL8VDPEjMw66LXO6OPRTsbbubvUX0HMLw\n6XqCqtSmcf7SgxQTI6/DGKL0N/WhExV7cH6104GVX1CSb34LThVYg3/A0p2uJSFd\nz9vfxXb94jsVJI4eXOtdZZSmKL0zaXeD7r7ylnj1AoGBAPJl66/HFuECCKAE4nEH\ni4oDLpzKxt7s263DmLi3YkBMw+XzO3KUEDBjuoWIz31dI9RE6mMxxBU154YwtJiH\nZ24cOEytOfLyxqPa/hTum+GV8BcxlXqgcPpOBebm5sC7vkLIafuqua/Fticm/Jr7\nMPom5mNundQ0o5+RfTYBIR4e\n-----END PRIVATE KEY-----\n    ",
-    "pref.enforce.https.filtering" : "com.android.chrome\ncom.chrome.beta\ncom.chrome.canary\ncom.chrome.dev\norg.chromium.chrome\ncom.brave.browser\ncom.hsv.freeadblockerbrowser\ncom.microsoft.emmx\ncom.microsoft.emmx.canary\ncom.yandex.browser\ncom.yandex.browser.alpha\ncom.yandex.browser.beta\nru.yandex.searchplugin\nru.yandex.searchplugin.beta\ncom.sec.android.app.sbrowser\ncom.sec.android.app.sbrowser.beta\ncom.yandex.browser.lite\njp.co.fenrir.android.sleipnir\njp.co.fenrir.android.sleipnir_black\njp.co.fenrir.android.sleipnir_test\njp.hazuki.yuzubrowser\norg.mozilla.fennec\norg.mozilla.fennec_aurora\norg.mozilla.fennec_fdroid\ncn.mozilla.firefox\nmobi.browser.flashfox\nmobi.browser.flfoxpro\norg.adblockplus.browser\norg.iron.srware\norg.mozilla.firefox\norg.mozilla.firefox_beta\norg.mozilla.fenix\ncom.android.browser\ncom.droid.browser\ncom.vionika.firephoenix\ncom.kiwibrowser.browser\norg.bromite.bromite\ncom.vivaldi.browser\ncom.vivaldi.browser.snapshot\ncom.brave.browser\ncom.brave.browser_dev\ncom.brave.browser_beta\ncom.brave.browser_default\ncom.brave.browser_nightly\ncom.huawei.browser\nio.github.forkmaintainers.iceraven\ncom.stoutner.privacybrowser.free\ncom.stoutner.privacybrowser.standard\ncom.microsoft.emmx.beta\ncom.microsoft.emmx.dev\ncom.jamal2367.styx\nmark.via\ncom.adguard.dns\ncom.ss.android.article.video\ncom.adguard.system\ncom.adobe.reader\ncom.google.android.webview\ncom.bbk.iqoo.logsystem\ncom.android.bbklog\ncom.mxtech.videoplayer.pro\ncn.nr19.mbrowser\ncom.tencent.tim\ncn.wps.moffice_eng\nvideoeditor.videorecorder.screenrecorder\ncom.One.WoodenLetter\ncmccwm.mobilemusic\nme.i38.dayday\ncom.vivo.hybrid\ncom.vivo.pushservice\ncom.vivo.browser\ncom.bbk.updater\ncom.android.VideoPlayer\ncom.ygkj.chelaile.standard\ncom.android.filemanager\ncom.qihoo.contents\ncom.ss.android.article.news\ncom.youku.phone\nidm.internet.download.manager.plus\ncom.rainsee.create\ncom.xingin.xhs\ncom.coolapk.market\ncom.tencent.qqmusic\ncom.flyersoft.seekbooks\ncom.qidian.QDReader\ncom.jjwxc.reader\ncom.nasoft.socmark",
+    "pref.enforce.https.filtering" : "com.android.chrome\ncom.chrome.beta\ncom.chrome.canary\ncom.chrome.dev\norg.chromium.chrome\ncom.brave.browser\ncom.hsv.freeadblockerbrowser\ncom.microsoft.emmx\ncom.microsoft.emmx.canary\ncom.yandex.browser\ncom.yandex.browser.alpha\ncom.yandex.browser.beta\nru.yandex.searchplugin\nru.yandex.searchplugin.beta\ncom.sec.android.app.sbrowser\ncom.sec.android.app.sbrowser.beta\ncom.yandex.browser.lite\njp.co.fenrir.android.sleipnir\njp.co.fenrir.android.sleipnir_black\njp.co.fenrir.android.sleipnir_test\njp.hazuki.yuzubrowser\norg.mozilla.fennec\norg.mozilla.fennec_aurora\norg.mozilla.fennec_fdroid\ncn.mozilla.firefox\nmobi.browser.flashfox\nmobi.browser.flfoxpro\norg.adblockplus.browser\norg.iron.srware\norg.mozilla.firefox\norg.mozilla.firefox_beta\norg.mozilla.fenix\ncom.android.browser\ncom.droid.browser\ncom.vionika.firephoenix\ncom.kiwibrowser.browser\norg.bromite.bromite\ncom.vivaldi.browser\ncom.vivaldi.browser.snapshot\ncom.brave.browser\ncom.brave.browser_dev\ncom.brave.browser_beta\ncom.brave.browser_default\ncom.brave.browser_nightly\ncom.huawei.browser\nio.github.forkmaintainers.iceraven\ncom.stoutner.privacybrowser.free\ncom.stoutner.privacybrowser.standard\ncom.microsoft.emmx.beta\ncom.microsoft.emmx.dev\ncom.jamal2367.styx\nmark.via\ncom.adguard.dns\ncom.ss.android.article.video\ncom.adguard.system\ncom.adobe.reader\ncom.google.android.webview\ncom.bbk.iqoo.logsystem\ncom.android.bbklog\ncom.mxtech.videoplayer.pro\ncn.nr19.mbrowser\ncom.tencent.tim\ncn.wps.moffice_eng\nvideoeditor.videorecorder.screenrecorder\ncom.One.WoodenLetter\ncmccwm.mobilemusic\nme.i38.dayday\ncom.vivo.hybrid\ncom.vivo.pushservice\ncom.vivo.browser\ncom.bbk.updater\ncom.android.VideoPlayer\ncom.ygkj.chelaile.standard\ncom.android.filemanager\ncom.qihoo.contents\ncom.ss.android.article.news\ncom.youku.phone\nidm.internet.download.manager.plus\ncom.rainsee.create\ncom.xingin.xhs\ncom.coolapk.market\ncom.tencent.qqmusic\ncom.flyersoft.seekbooks\ncom.qidian.QDReader\ncom.jjwxc.reader\ncom.nasoft.socmark\ncom.xbrowser.play",
     "dns_user_rules_string" : "||sysupgrade.\n||st-sysupgrade.\n||appupgrade.\n||adreq.\n||stappupgrade.",
     "user_rules_string" : "!-vivo手机\n||sysupgrade.\n||st-sysupgrade.\n||appupgrade.\n||adreq.\n||stappupgrade.\n!-自定义\n    "
   },
   "settingsFiltersConfiguration" : {
     "customFilters" : [ {
-      "enabled" : true,
-      "filterId" : 10000,
-      "name" : "Adblock通用规则(严格模式)",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt",
-      "homePage" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt",
-      "timeUpdated" : 1658167535120,
-      "trusted" : true,
-      "version" : "2022071801"
-    }, {
       "enabled" : true,
       "filterId" : 10001,
       "name" : "NoAppDownload",
@@ -4841,6 +4843,15 @@
       "version" : "20220615001"
     }, {
       "enabled" : true,
+      "filterId" : 10000,
+      "name" : "Adblock通用规则(严格模式)",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt",
+      "homePage" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt",
+      "timeUpdated" : 1658167535120,
+      "trusted" : true,
+      "version" : "2022071801"
+    }, {
+      "enabled" : true,
       "filterId" : 10004,
       "name" : "CJX's EasyList Lite",
       "subscriptionUrl" : "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
@@ -4848,32 +4859,36 @@
       "timeUpdated" : 1658645294277,
       "trusted" : false,
       "version" : "202012080856"
+    }, {
+      "enabled" : true,
+      "filterId" : 10005,
+      "name" : "QuarkList",
+      "subscriptionUrl" : "https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt",
+      "homePage" : "https://n2o.io/go?page=quarklist",
+      "timeUpdated" : 1658901822210,
+      "trusted" : false,
+      "version" : "2.1.4"
     } ],
     "dnsFilters" : [ {
-      "enabled" : true,
-      "filterId" : 100004,
-      "name" : "大萌主",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/jiekouAD.txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 15,
-      "name" : "AdGuard DNS 过滤器",
-      "subscriptionUrl" : "https://filters.adtidy.org/android/filters/15_optimized.txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 100006,
-      "name" : "The-Big-List-of-Hacked-Malware-Web-Sites(Adblist)",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 100003,
-      "name" : "UrlHaus",
-      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
-    }, {
       "enabled" : true,
       "filterId" : 100001,
       "name" : "CPBLFilters",
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/bongochong/CombinedPrivacyBlockLists@master/cpbl-abp-list.txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100003,
+      "name" : "TheBigListHackedMalwareWeb",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100006,
+      "name" : "DandelionSprout(AntiMalware)",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100005,
+      "name" : "大萌主",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/jiekouAD.txt"
     }, {
       "enabled" : true,
       "filterId" : 100002,
@@ -4881,9 +4896,14 @@
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Formats/GoodbyeAds-AdBlock-Filter.txt"
     }, {
       "enabled" : true,
-      "filterId" : 100005,
-      "name" : "DandelionSprout",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+      "filterId" : 15,
+      "name" : "AdGuard DNS 过滤器",
+      "subscriptionUrl" : "https://filters.adtidy.org/android/filters/15_optimized.txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100004,
+      "name" : "OnlineMaliciousURL",
+      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
     }, {
       "enabled" : true,
       "filterId" : 100000,
@@ -4940,12 +4960,12 @@
       "231" : false,
       "232" : false,
       "104" : false,
-      "233" : false,
       "105" : false,
-      "234" : false,
+      "233" : false,
       "106" : false,
-      "107" : false,
+      "234" : false,
       "235" : false,
+      "107" : false,
       "236" : false,
       "108" : false,
       "109" : false,
@@ -4957,22 +4977,22 @@
       "112" : false,
       "241" : false,
       "113" : false,
-      "242" : false,
       "114" : false,
+      "242" : false,
       "243" : false,
       "244" : false,
       "245" : false,
-      "246" : false,
       "118" : true,
-      "247" : false,
+      "246" : false,
       "119" : false,
+      "247" : false,
       "120" : false,
-      "121" : false,
       "249" : false,
-      "122" : false,
+      "121" : false,
       "250" : false,
-      "123" : false,
+      "122" : false,
       "251" : true,
+      "123" : false,
       "252" : false,
       "253" : false
     }
