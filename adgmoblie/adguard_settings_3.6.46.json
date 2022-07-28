@@ -4746,6 +4746,17 @@
     "default" : false
   }, {
     "adBlocking" : true,
+    "httpsFiltering" : false,
+    "mobileData" : false,
+    "mobileDataScreenOff" : false,
+    "packageName" : "com.wpengapp.lightstart",
+    "showFirewallNotifications" : false,
+    "trafficFiltering" : true,
+    "wifi" : false,
+    "wifiScreenOff" : false,
+    "default" : false
+  }, {
+    "adBlocking" : true,
     "httpsFiltering" : true,
     "mobileData" : true,
     "mobileDataScreenOff" : true,
@@ -4834,15 +4845,6 @@
   "settingsFiltersConfiguration" : {
     "customFilters" : [ {
       "enabled" : true,
-      "filterId" : 10001,
-      "name" : "NoAppDownload",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt",
-      "homePage" : "https://github.com/Noyllopa/NoAppDownload",
-      "timeUpdated" : 1658579496415,
-      "trusted" : false,
-      "version" : "20220615001"
-    }, {
-      "enabled" : true,
       "filterId" : 10000,
       "name" : "Adblock通用规则(严格模式)",
       "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt",
@@ -4852,24 +4854,29 @@
       "version" : "2022071801"
     }, {
       "enabled" : true,
-      "filterId" : 10004,
+      "filterId" : 10001,
       "name" : "CJX's EasyList Lite",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjxlist.txt",
       "homePage" : "https://github.com/cjx82630/cjxlist",
-      "timeUpdated" : 1658645294277,
+      "timeUpdated" : 1658972420095,
       "trusted" : false,
       "version" : "202012080856"
     }, {
       "enabled" : true,
-      "filterId" : 10005,
-      "name" : "QuarkList",
-      "subscriptionUrl" : "https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt",
-      "homePage" : "https://n2o.io/go?page=quarklist",
-      "timeUpdated" : 1658901822210,
+      "filterId" : 10002,
+      "name" : "NoAppDownload",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/Noyllopa/NoAppDownload@master/NoAppDownload.txt",
+      "homePage" : "https://github.com/Noyllopa/NoAppDownload",
+      "timeUpdated" : 1658972696947,
       "trusted" : false,
-      "version" : "2.1.4"
+      "version" : "20220615001"
     } ],
     "dnsFilters" : [ {
+      "enabled" : true,
+      "filterId" : 100005,
+      "name" : "DandelionSproutAntiMalware",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+    }, {
       "enabled" : true,
       "filterId" : 100001,
       "name" : "CPBLFilters",
@@ -4877,23 +4884,18 @@
     }, {
       "enabled" : true,
       "filterId" : 100003,
-      "name" : "TheBigListHackedMalwareWeb",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt"
+      "name" : "大萌主",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/dnslist.txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100004,
+      "name" : "OnlineMaliciousUrlList",
+      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
     }, {
       "enabled" : true,
       "filterId" : 100006,
-      "name" : "DandelionSprout(AntiMalware)",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 100005,
-      "name" : "大萌主",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/damengzhu/banad@main/jiekouAD.txt"
-    }, {
-      "enabled" : true,
-      "filterId" : 100002,
-      "name" : "GoodbyeAds",
-      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Formats/GoodbyeAds-AdBlock-Filter.txt"
+      "name" : "EnergizedIPList",
+      "subscriptionUrl" : "https://block.energized.pro/extensions/ips/formats/list.txt"
     }, {
       "enabled" : true,
       "filterId" : 15,
@@ -4901,16 +4903,16 @@
       "subscriptionUrl" : "https://filters.adtidy.org/android/filters/15_optimized.txt"
     }, {
       "enabled" : true,
-      "filterId" : 100004,
-      "name" : "OnlineMaliciousURL",
-      "subscriptionUrl" : "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
-    }, {
-      "enabled" : true,
       "filterId" : 100000,
       "name" : "AntiAD",
       "subscriptionUrl" : "https://anti-ad.net/domains.txt"
+    }, {
+      "enabled" : true,
+      "filterId" : 100002,
+      "name" : "TheBigListOfHackedMalwareWeb",
+      "subscriptionUrl" : "https://cdn.jsdelivr.net/gh/kailinda/rules@master/others/The-Big-List-of-Hacked-Malware-Web-Sites(Adblist).txt"
     } ],
-    "enabledGroups" : [ "ADS", "LANGUAGE", "PRIVACY", "ANNOYANCES", "CUSTOM" ],
+    "enabledGroups" : [ "LANGUAGE", "ADS", "PRIVACY", "CUSTOM" ],
     "filters" : {
       "1" : false,
       "2" : true,
@@ -4924,21 +4926,21 @@
       "10" : false,
       "11" : true,
       "13" : false,
-      "14" : true,
+      "14" : false,
       "15" : false,
       "16" : false,
       "17" : true,
       "18" : false,
       "19" : false,
-      "20" : true,
+      "20" : false,
       "21" : false,
-      "22" : true,
+      "22" : false,
       "201" : false,
       "202" : false,
       "203" : false,
       "204" : false,
       "206" : false,
-      "207" : true,
+      "207" : false,
       "208" : false,
       "209" : true,
       "212" : false,
@@ -4982,8 +4984,8 @@
       "243" : false,
       "244" : false,
       "245" : false,
-      "118" : true,
       "246" : false,
+      "118" : true,
       "119" : false,
       "247" : false,
       "120" : false,
@@ -4998,11 +5000,11 @@
     }
   },
   "dnsServer" : {
-    "upstreams" : [ "60.205.164.30:5333", "tls://1.12.12.12", "tls://223.6.6.6", "tls://120.53.53.53", "52.80.52.52" ],
-    "name" : "mix-custom",
-    "id" : 1118,
+    "upstreams" : [ "tls://dns.pub", "tls://dns.alidns.com", "tls://dot.360.cn" ],
+    "name" : "mix-tls",
+    "id" : 1059,
     "providerId" : 1000000,
-    "type" : "MULTITYPES"
+    "type" : "DOT"
   },
   "dnsServersList" : [ {
     "upstreams" : [ "tls://223.5.5.5", "tls://223.6.6.6" ],
@@ -5071,6 +5073,12 @@
     "providerId" : 1000000,
     "type" : "DOT"
   }, {
+    "upstreams" : [ "60.205.164.30:5333", "52.80.52.52:53" ],
+    "name" : "mix-custom",
+    "id" : 1120,
+    "providerId" : 1000000,
+    "type" : "REGULAR"
+  }, {
     "upstreams" : [ "9.9.9.11:9953", "149.112.112.11:9953" ],
     "name" : "非标-9953(quad9/ecs)",
     "id" : 1098,
@@ -5112,12 +5120,6 @@
     "id" : 1112,
     "providerId" : 1000000,
     "type" : "DOH"
-  }, {
-    "upstreams" : [ "60.205.164.30:5333", "tls://1.12.12.12", "tls://223.6.6.6", "tls://120.53.53.53", "52.80.52.52" ],
-    "name" : "mix-custom",
-    "id" : 1118,
-    "providerId" : 1000000,
-    "type" : "MULTITYPES"
   }, {
     "upstreams" : [ "https://doh.pub/dns-query" ],
     "name" : "dnspod over https",

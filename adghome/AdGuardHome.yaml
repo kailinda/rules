@@ -147,6 +147,14 @@ filters:
   url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
   name: Dandelion Sprout's Anti-Malware List
   id: 1658711432
+- enabled: true
+  url: https://block.energized.pro/extensions/ips/formats/list.txt
+  name: EnergizedIPListExtension
+  id: 1658970259
+- enabled: true
+  url: https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedMalware/energized/EnergizedMalware-domains.txt
+  name: EnergizedMalwareDomains
+  id: 1658970260
 whitelist_filters: []
 user_rules:
 - '||2345.com^'
