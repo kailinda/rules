@@ -1,20 +1,22 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(宽松模式)
-! Version: 2022071801
+! Version: 2022073001
+! Expires: 1 day
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(easy).txt
 
 
 !-核武库
 !--非常规域名
 !---所有非常规域名
-/^https?:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$third-party
+/^[a-z0-9]+:\/\/(?!([^\/]+\.(com|cn|org|net|gov|edu|io)(?!\.)\b))/$third-party
 !---所有非常规端口
-/^https?:\/\/[\w\-\.]+\:(?:(?!(80|443|8080)\b)\d+)\b/$third-party
+/^[a-z0-9]+:\/\/[\w\-\.]+\:(?:(?!(80|443|8080|8088)\b)\d+)\b/$third-party
 !---所有分析字段、广告字段
 /(?:\b|\_)(?:analysis|analytics?|statistics?|tongji)\d*(?:[^%\w]|(?!.+))/
 /(?:\b|\_)(?:ads|adv|advert?|advertise?|advertise?ment|adsrv|adsrvice|adsrving|adservice|adserver?|adsserving)\d*(?:[^%\w]|(?!.+))/
+/(?:\b|\_)(?:adsystem|adsensor|admaster)\d*(?:[^%\w]|(?!.+))/
 !---其他字段
-/(?:\b|\_)(?:51la|guanggao)\d*(?:[^%\w]|(?!.+))/
+/(?:\b|\_)(?:51la|cnnic|guanggao|tuiguang|lianmeng|doubleclick|metrics?|tracker|counter|toolbar|webads|web-stat)\d*(?:[^%\w]|(?!.+))/
 
 !-恶意链接
 *@*.exe^
