@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Adblock通用规则(严格模式)
-! Version: 2022073001
+! Version: 2022073101
 ! Expires: 1 day
 ! Homepage: https://cdn.jsdelivr.net/gh/kailinda/rules@master/generic(strict).txt
 
@@ -18,7 +18,7 @@
 /(?:\b|\_)(?:ads|adv|advert?|advertise?|advertise?ment|adsrv|adsrvice|adsrving|adservice|adserver?|adsserving)\d*(?:[^%\w]|(?!.+))/
 /(?:\b|\_)(?:adsystem|adsensor|admaster)\d*(?:[^%\w]|(?!.+))/
 !---其他字段
-/(?:\b|\_)(?:51la|cnnic|guanggao|tuiguang|lianmeng|doubleclick|metrics?|tracker|counter|toolbar|webads|web-stat)\d*(?:[^%\w]|(?!.+))/
+/(?:\b|\_)(?:51la|cnnic|guanggao|tuiguang|lianmeng|doubleclick|metrics?|tracker|counter|toolbar|canvas|webads|web-stat)\d*(?:[^%\w]|(?!.+))/
 
 !-恶意链接
 *@*.exe^
