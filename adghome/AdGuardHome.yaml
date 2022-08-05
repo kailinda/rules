@@ -152,9 +152,9 @@ filters:
   name: EnergizedIPListExtension
   id: 1658970259
 - enabled: true
-  url: https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedMalware/energized/EnergizedMalware-domains.txt
-  name: EnergizedMalwareDomains
-  id: 1658970260
+  url: https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final.cidr
+  name: CombinedPrivacyBlockLists
+  id: 1659169811
 whitelist_filters: []
 user_rules:
 - '||2345.com^'
