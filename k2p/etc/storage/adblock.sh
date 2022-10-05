@@ -17,7 +17,7 @@ if [ "x$cdn_net_code" = "x1" ] ; then
 	curl -4sSkL -o /tmp/bogus-nxdomain.conf.tmp $NX_URL && \
 	mv -f /tmp/bogus-nxdomain.conf.tmp /etc/storage/dnsmasq/conf.d/bogus-nxdomain.conf && \
 	chmod 644 /etc/storage/dnsmasq/conf.d/bogus-nxdomain.conf && \
-	logger -t "${logger_title}" "【ADBLOCK】更新bogus-nxdomain.conf,成功" || \
+	logger -t "${logger_title}" "【ADBLOCK】更新bogus-nxdomain.conf(行数:`wc -l /etc/storage/dnsmasq/conf.d/bogus-nxdomain.conf|cut -f1 -d ' '`),成功" || \
 	{ logger -t "${logger_title}" "【ADBLOCK】更新bogus-nxdomain.conf,失败" ; \
 	[ -f /tmp/bogus-nxdomain.conf.tmp ] && rm -f /tmp/bogus-nxdomain.conf.tmp ; \
 	exit 1 ; }
@@ -30,7 +30,7 @@ if [ "x$cdn_net_code" = "x1" ] ; then
 	curl -4sSkL -o /tmp/fast-github.host.tmp $GT_URL && \
 	mv -f /tmp/fast-github.host.tmp /etc/storage/dnsmasq/fast-github.host && \
 	chmod 644 /etc/storage/dnsmasq/fast-github.host && \
-	logger -t "${logger_title}" "【ADBLOCK】更新 github加速文件,成功" || \
+	logger -t "${logger_title}" "【ADBLOCK】更新 github加速文件(行数:`wc -l /etc/storage/dnsmasq/fast-github.host|cut -f1 -d ' '`),成功" || \
 	{ logger -t "${logger_title}" "【ADBLOCK】更新 github加速文件,失败" ; \
 	[ -f /tmp/fast-github.host.tmp ] && rm -f /tmp/fast-github.host.tmp ; \
 	exit 1 ; }
@@ -43,16 +43,8 @@ if [ "x$antiad_net_code" = "x1" ] ; then
 	[ ! -d /tmp/conf/ ] && mkdir -p /tmp/conf/
 	curl -4sSkL -o /tmp/conf/antiad.conf $GT_URL && \
 	chmod 644 /tmp/conf/antiad.conf && \
-	logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件,成功" || \
+	logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件(行数:`wc -l /tmp/conf/antiad.conf|cut -f1 -d ' '`),成功" || \
 	logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件,失败"
-	
-	[ -f /tmp/conf/antiad.conf ] && \
-	[ `cat /tmp/conf/antiad.conf|wc -l` -gt 1000 ] && \
-	chmod 644 /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
-	{ mount --bind /tmp/conf/antiad.conf /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
-	logger -t "${logger_title}" "【SMART_DNS】初始化并绑定antiad.conf,成功 ~~~"|| \
-	logger -t "${logger_title}" "【SMART_DNS】绑定antiad.conf,失败 !!!";}|| \
-	logger -t "${logger_title}" "【SMART_DNS】antiad.conf目录已被绑定 ~~~"
 fi
 
 exit 0

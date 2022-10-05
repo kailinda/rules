@@ -10,25 +10,25 @@ exit 0
 #获取响应状态码  
 net_code1=`ping -4 -c 5 -w 10 218.30.118.6 >/dev/null 2>&1 && echo 1 || echo 0`
 net_code2=`ping -4 -c 5 -w 10 119.29.29.29 >/dev/null 2>&1 && echo 1 || echo 0`
-github_net_code=`ping -4 -c 3 -w 5 github.com >/dev/null 2>&1 && echo 1 || echo 0`
+fastgit_net_code=`ping -4 -c 5 -w 10 raw.fastgit.org >/dev/null 2>&1 && echo 1 || echo 0`
 
-[ "x$github_net_code" = "x1" ] && dwn_url='https://github.com/kailinda/rules/raw/main/smartdns/smartdns.tar.bz2.part'
+[ "x$fastgit_net_code" = "x1" ] && dwn_url='https://raw.fastgit.org/kailinda/rules/main/smartdns/smartdns.tar.bz2.part'
 dwn_url='https://cdn.jsdelivr.net/gh/kailinda/rules@master/smartdns/smartdns.tar.bz2.part'
 
 logger -t "${logger_title}" "【SMART_DNS】准备启动dns序列 ..."
 
 logger -t "${logger_title}" "【SMART_DNS】重置上游DNS为可用状态 ..."
-sed -i 's/^#server=202.141.162.123/server=202.141.162.123/' /etc/storage/dnsmasq/dnsmasq.conf && \
-sed -i 's/^#server=101.6.6.6/server=101.6.6.6/' /etc/storage/dnsmasq/dnsmasq.conf && \
+sed -i 's/^#server=/server=/' /etc/storage/dnsmasq/dnsmasq.conf && \
 sed -i 's/^#all-servers/all-servers/' /etc/storage/dnsmasq/dnsmasq.conf && \
-sed -i 's/^server=127.0.0.1/#server=127.0.0.1/' /etc/storage/dnsmasq/dnsmasq.conf && \
+sed -i 's/^server=127/#server=127/' /etc/storage/dnsmasq/dnsmasq.conf && \
+sed -i 's/^conf-file=/#conf-file=/' /etc/storage/dnsmasq/dnsmasq.conf && \
 restart_dhcpd || { logger -t "${logger_title}" "【SMART_DNS】配置dnsmasq,失败 !!!!";exit 0;}
 
 if [[ "x$net_code1" = "x1" -o "x$net_code2" = "x1" ]]; then
 	logger -t "${logger_title}" "【SMART_DNS】合成smartdns.tar.bz2 ..."
-	/usr/bin/curl -4sSkL -o /tmp/smartdns.tar.bz2.partaa ${dwn_url}aa && \
-	/usr/bin/curl -4sSkL -o /tmp/smartdns.tar.bz2.partab ${dwn_url}ab && \
-	/usr/bin/curl -4sSkL -o /tmp/smartdns.tar.bz2.partac ${dwn_url}ac && \
+	/usr/bin/curl -4sSkL --retry 3 -o /tmp/smartdns.tar.bz2.partaa ${dwn_url}aa && \
+	/usr/bin/curl -4sSkL --retry 3 -o /tmp/smartdns.tar.bz2.partab ${dwn_url}ab && \
+	/usr/bin/curl -4sSkL --retry 3 -o /tmp/smartdns.tar.bz2.partac ${dwn_url}ac && \
 	/bin/cat /tmp/smartdns.tar.bz2.part* > /tmp/smartdns.tar.bz2 && \
 	/bin/rm -f /tmp/smartdns.tar.bz2.part* && \
 	logger -t "${logger_title}" "【SMART_DNS】smartdns.tar.bz2已合成 ~~~" || \
@@ -58,30 +58,10 @@ if [[ "x$net_code1" = "x1" -o "x$net_code2" = "x1" ]]; then
 		logger -t "${logger_title}" "【SMART_DNS】开始生成chnlist.conf ~~~"
 		cat /tmp/conf/chnlist.txt|grep -E '\.(com|cn)$'|sed -e '/[0-9]\{4,\}/d' -e '/\b[0-9,\-]\+\b/d' -e 's/^/server=\//' -e 's/$/\/127.0.0.1#5303/' > /tmp/conf/chnlist.conf && \
 		chmod 644 /tmp/conf/chnlist.conf && \
-		logger -t "${logger_title}" "【SMART_DNS】生成chnlist.conf,成功 ~~~" && \
-		{ [ `df|grep chnlist|wc -l` -eq 0 ] && \
-		echo '#chnlist' > /etc/storage/dnsmasq/conf.d/chnlist.conf && \
-		chmod 644 /etc/storage/dnsmasq/conf.d/chnlist.conf && \
-		{ mount --bind /tmp/conf/chnlist.conf /etc/storage/dnsmasq/conf.d/chnlist.conf && \
-		logger -t "${logger_title}" "【SMART_DNS】初始化并绑定chnlist.conf,成功 ~~~"|| \
-		logger -t "${logger_title}" "【SMART_DNS】绑定chnlist.conf,失败 !!!";}|| \
-		logger -t "${logger_title}" "【SMART_DNS】chnlist.conf目录已被绑定 ~~~";}|| \
+		logger -t "${logger_title}" "【SMART_DNS】生成chnlist.conf,成功 ~~~"|| \
 		logger -t "${logger_title}" "【SMART_DNS】更新chnlist.conf,失败 !!!"
 	else
 		logger -t "${logger_title}" "【SMART_DNS】chnlist.conf已存在 ~~~"
-	fi
-	
-	if [ -f /tmp/conf/antiad.conf ] ; then
-		logger -t "${logger_title}" "【SMART_DNS】发现antiad.conf ~~~"
-		[ `df|grep anti-ad|wc -l` -eq 0 ] && \
-		echo '#anti-ad-for-dnsmasq' > /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
-		chmod 644 /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
-		{ mount --bind /tmp/conf/antiad.conf /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
-		logger -t "${logger_title}" "【SMART_DNS】初始化并绑定antiad.conf,成功 ~~~"|| \
-		logger -t "${logger_title}" "【SMART_DNS】绑定antiad.conf,失败 !!!";}|| \
-		logger -t "${logger_title}" "【SMART_DNS】antiad.conf目录已被绑定 ~~~"
-	else
-		logger -t "${logger_title}" "【SMART_DNS】antiad.conf不存在 ~~~"
 	fi
 	
 	start-stop-daemon -K -n chinadns-ng >/dev/null 2>&1
@@ -96,10 +76,10 @@ if [[ "x$net_code1" = "x1" -o "x$net_code2" = "x1" ]]; then
 	/sbin/start-stop-daemon -S -c nobody -b -o -q -x /tmp/bin/chinadns-ng -- -N -b 127.0.0.1 -l 5300 -c '127.0.0.1#5303,119.29.29.29' -t '127.0.0.1#5302,208.67.222.222#443' -4 chnroute -6 chnroute6 -g /tmp/conf/gfwlist.txt -m /tmp/conf/chnlist.txt && logger -t "${logger_title}" "【SMART_DNS】chinadns-ng启动,成功 ~~~" || { logger -t "${logger_title}" "【SMART_DNS】chinadns-ng启动,失败 !!!";exit 0;}
 	
 	logger -t "${logger_title}" "【SMART_DNS】恢复上游DNS为本地地址 ..."
-	sed -i 's/^server=202.141.162.123/#server=202.141.162.123/' /etc/storage/dnsmasq/dnsmasq.conf && \
-	sed -i 's/^server=101.6.6.6/#server=101.6.6.6/' /etc/storage/dnsmasq/dnsmasq.conf && \
+	sed -i 's/^server=/#server=/' /etc/storage/dnsmasq/dnsmasq.conf && \
 	sed -i 's/^all-servers/#all-servers/' /etc/storage/dnsmasq/dnsmasq.conf && \
 	sed -i 's/^#server=127/server=127/' /etc/storage/dnsmasq/dnsmasq.conf && \
+	sed -i 's/^#conf-file=/conf-file=/' /etc/storage/dnsmasq/dnsmasq.conf && \
 	restart_dhcpd || { logger -t "${logger_title}" "【SMART_DNS】配置dnsmasq,失败 !!!!";exit 0;}
 
 	[ ! -f /tmp/smartdns.lock ] && touch /tmp/smartdns.lock

@@ -13,6 +13,7 @@ logger -t "${logger_title}" "【WAN脚本】设置除lo之外的网卡 mtu=1492 
 	if [ ! -f '/tmp/wan.up.lock' ] ; then
 		touch /tmp/wan.up.lock
 		logger -t "${logger_title}" "【WAN脚本】执行smartdns.sh ..." && \
+		sleep 15
 		flock -xn /tmp/smartdns.lock /etc/storage/smartdns.sh
 	fi
 else
