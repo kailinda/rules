@@ -9,9 +9,9 @@
 13.236.229.21 www.github.com
 
 #IOS OTA
-127.0.0.1 mesu.apple.com
-127.0.0.1 appldnld.apple.com
-127.0.0.1 xp.apple.com
-127.0.0.1 gdmf.apple.com
-127.0.0.1 ipsw.me
-127.0.0.1 updates-http.cdn-apple.com
+#127.0.0.1 mesu.apple.com
+#127.0.0.1 appldnld.apple.com
+#127.0.0.1 xp.apple.com
+#127.0.0.1 gdmf.apple.com
+#127.0.0.1 ipsw.me
+#127.0.0.1 updates-http.cdn-apple.com

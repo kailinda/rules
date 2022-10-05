@@ -10,7 +10,9 @@ exit 0
 #获取响应状态码  
 net_code1=`ping -4 -c 5 -w 10 218.30.118.6 >/dev/null 2>&1 && echo 1 || echo 0`
 net_code2=`ping -4 -c 5 -w 10 119.29.29.29 >/dev/null 2>&1 && echo 1 || echo 0`
+github_net_code=`ping -4 -c 3 -w 5 github.com >/dev/null 2>&1 && echo 1 || echo 0`
 
+[ "x$github_net_code" = "x1" ] && dwn_url='https://github.com/kailinda/rules/raw/main/smartdns/smartdns.tar.bz2.part'
 dwn_url='https://cdn.jsdelivr.net/gh/kailinda/rules@master/smartdns/smartdns.tar.bz2.part'
 
 logger -t "${logger_title}" "【SMART_DNS】准备启动dns序列 ..."
@@ -67,6 +69,19 @@ if [[ "x$net_code1" = "x1" -o "x$net_code2" = "x1" ]]; then
 		logger -t "${logger_title}" "【SMART_DNS】更新chnlist.conf,失败 !!!"
 	else
 		logger -t "${logger_title}" "【SMART_DNS】chnlist.conf已存在 ~~~"
+	fi
+	
+	if [ -f /tmp/conf/antiad.conf ] ; then
+		logger -t "${logger_title}" "【SMART_DNS】发现antiad.conf ~~~"
+		[ `df|grep anti-ad|wc -l` -eq 0 ] && \
+		echo '#anti-ad-for-dnsmasq' > /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
+		chmod 644 /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
+		{ mount --bind /tmp/conf/antiad.conf /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
+		logger -t "${logger_title}" "【SMART_DNS】初始化并绑定antiad.conf,成功 ~~~"|| \
+		logger -t "${logger_title}" "【SMART_DNS】绑定antiad.conf,失败 !!!";}|| \
+		logger -t "${logger_title}" "【SMART_DNS】antiad.conf目录已被绑定 ~~~"
+	else
+		logger -t "${logger_title}" "【SMART_DNS】antiad.conf不存在 ~~~"
 	fi
 	
 	start-stop-daemon -K -n chinadns-ng >/dev/null 2>&1

@@ -37,4 +37,22 @@ if [ "x$cdn_net_code" = "x1" ] ; then
 	[ -f /tmp/fast-github.host.tmp ] && rm -f /tmp/fast-github.host.tmp
 fi
 
+logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件 ..."
+[ "x$antiad_net_code" = "x1" ] && GT_URL='https://anti-ad.net/anti-ad-for-dnsmasq.conf'
+if [ "x$antiad_net_code" = "x1" ] ; then
+	[ ! -d /tmp/conf/ ] && mkdir -p /tmp/conf/
+	curl -4sSkL -o /tmp/conf/antiad.conf $GT_URL && \
+	chmod 644 /tmp/conf/antiad.conf && \
+	logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件,成功" || \
+	logger -t "${logger_title}" "【ADBLOCK】更新 antiad广告文件,失败"
+	
+	[ -f /tmp/conf/antiad.conf ] && \
+	[ `cat /tmp/conf/antiad.conf|wc -l` -gt 1000 ] && \
+	chmod 644 /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
+	{ mount --bind /tmp/conf/antiad.conf /etc/storage/dnsmasq/conf.d/anti-ad-for-dnsmasq.conf && \
+	logger -t "${logger_title}" "【SMART_DNS】初始化并绑定antiad.conf,成功 ~~~"|| \
+	logger -t "${logger_title}" "【SMART_DNS】绑定antiad.conf,失败 !!!";}|| \
+	logger -t "${logger_title}" "【SMART_DNS】antiad.conf目录已被绑定 ~~~"
+fi
+
 exit 0
