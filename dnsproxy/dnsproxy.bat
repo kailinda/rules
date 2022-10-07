@@ -1,0 +1,2 @@
+@echo off
+%cd%\dnsproxy.exe -l 0.0.0.0 -p 5333 -u %cd%\dns\cn-lite-tls-domain.txt -u %cd%\dns\chnlist.txt -u %cd%\dns\gfwlist(google).txt -u %cd%\dns\gfwlist(cloudflare2).txt -u %cd%\dns\gfwlist(opendns).txt -f 9.9.9.11:9953 -f tcp://208.67.220.220:443 -f 94.140.14.140:5353 -b 223.6.6.6 -b 119.29.29.29 -b 114.114.114.114 -b 1.2.4.8 --all-servers --edns --cache --cache-optimistic --cache-min-ttl=900 --fastest-addr --ipv6-disabled -o %cd%\dnsproxy.log
