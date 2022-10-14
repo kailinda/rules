@@ -15,5 +15,5 @@
 sync && sync && echo 1 > /proc/sys/vm/drop_caches
 
 logger -t "【Started脚本】" "批量执行Started脚本集合 ..."
-[ -d '/etc/storage/started.d' ] && find /etc/storage/started.d -type f -perm /111 -exec flock -xn /tmp/started.d.lock {} \;
+[ -d '/etc/storage/started.d' ] && find /etc/storage/started.d -type f -perm /111 -exec {} \;
 

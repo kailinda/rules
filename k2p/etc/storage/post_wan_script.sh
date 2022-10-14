@@ -12,7 +12,7 @@ logger -t "【WAN脚本】" "设置除lo之外的网卡 mtu=1492 ..."
 	if [ ! -f '/tmp/wan.up.lock' ] ; then
 		touch /tmp/wan.up.lock
 		logger -t "【WAN脚本】" "批量执行WAN初始化脚本集合 ..."
-		[ -d '/etc/storage/wan.d' ] && find /etc/storage/wan.d -type f -perm /111 -exec flock -xn /tmp/wan.d.lock {} \;
+		[ -d '/etc/storage/wan.d' ] && find /etc/storage/wan.d -type f -perm /111 -exec {} \;
 	fi
 else
 	rm -f /tmp/wan.up.lock
