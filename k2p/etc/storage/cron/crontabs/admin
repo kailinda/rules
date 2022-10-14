@@ -1,11 +1,10 @@
 # 时间同步
 0 */6 * * * ntpd -n -q -p ntp1.aliyun.com
-# 广告规则(暂时只有净化IP的规则，没有广告规则)
-0 5 */3 * * /etc/storage/adblock.sh && restart_dhcpd
 # 网络监测
-*/15 * * * * flock -xn /tmp/wan_dog.lock /etc/storage/wan_dog.sh &
+*/15 * * * * flock -xn /tmp/wan_dog.lock wan_dog &
 # 清理内存
 5 0,6,12,18 * * * sync && sync && echo 3 > /proc/sys/vm/drop_caches
-*/7 * * * * /etc/storage/freemem.sh
+*/7 * * * * freemem
 # 定时重启
 # 1 3 */30 * * reboot
+

@@ -1,0 +1,17 @@
+# Custom user hosts file
+# Example:
+# 192.168.1.100		Boo
+
+8.8.4.4 dns.google
+135.181.182.211 easylist-downloads.adblockplus.org
+185.199.110.133 raw.githubusercontent.com
+52.64.108.95 github.com
+13.236.229.21 www.github.com
+
+#IOS OTA
+#127.0.0.1 mesu.apple.com
+#127.0.0.1 appldnld.apple.com
+#127.0.0.1 xp.apple.com
+#127.0.0.1 gdmf.apple.com
+#127.0.0.1 ipsw.me
+#127.0.0.1 updates-http.cdn-apple.com

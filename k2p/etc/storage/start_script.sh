@@ -40,17 +40,6 @@ echo 1800     > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_established
 echo 30       > /proc/sys/net/netfilter/nf_conntrack_icmp_timeout
 echo 50       > /proc/sys/net/netfilter/nf_conntrack_udp_timeout
 
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_udp_timeout
-echo 120 > /proc/sys/net/netfilter/nf_conntrack_udp_timeout_stream
-echo 15 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_sent
-echo 15 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_syn_recv
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_fin_wait
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close_wait
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_last_ack
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait
-echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close
-
-
 # panic
 echo 1        > /proc/sys/kernel/panic
 echo 1        > /proc/sys/kernel/panic_on_oops
