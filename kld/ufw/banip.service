@@ -1,0 +1,8 @@
+[Unit]
+Description=banip
+
+[Service]
+Type=simple
+TimeoutSec=infinity
+ExecStart=/bin/bash /usr/sbin/banip
+
