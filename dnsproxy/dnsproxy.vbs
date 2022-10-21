@@ -1,1 +1,0 @@
-createobject("wscript.shell").run "D:\Opt\MyBat\dnsproxy\dnsproxy.bat",0

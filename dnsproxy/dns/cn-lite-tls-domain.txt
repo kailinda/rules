@@ -1,3 +1,0 @@
-tls://dns.alidns.com
-tls://dot.360.cn
-tls://dot.pub

@@ -1,0 +1,12 @@
+rootfs / rootfs rw 0 0
+/dev/root / squashfs ro,relatime 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+tmpfs /dev tmpfs rw,relatime,size=8k 0 0
+tmpfs /etc tmpfs rw,noatime,size=6144k 0 0
+tmpfs /home tmpfs rw,relatime,size=1024k 0 0
+tmpfs /media tmpfs rw,relatime,size=8k 0 0
+tmpfs /mnt tmpfs rw,relatime,size=8k 0 0
+tmpfs /tmp tmpfs rw,relatime,size=24576k 0 0
+tmpfs /var tmpfs rw,relatime,size=4096k 0 0
+devpts /dev/pts devpts rw,relatime,mode=600 0 0

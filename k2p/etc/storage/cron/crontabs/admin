@@ -1,0 +1,12 @@
+# 时间同步
+0 */6 * * * ntpd -n -q -p ntp1.aliyun.com
+# 网络监测
+*/15 * * * * flock -xn /tmp/wan_dog.lock wan_dog &
+# 清理内存
+5 0,6,12,18 * * * sync && sync && echo 1 > /proc/sys/vm/drop_caches
+*/7 * * * * flock -xn /tmp/freemem.lock freemem &
+# Irqbalance
+3 3 * * * /usr/bin/irqbalance 0
+# 定时重启
+# 1 3 */30 * * reboot
+

@@ -1,1 +1,0 @@
-createobject("wscript.shell").run "D:\Opt\MyBat\adguardhome\adguardhome.bat",0

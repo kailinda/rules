@@ -1,4 +1,0 @@
-https://dns.alidns.com/dns-query
-https://doh.pub/dns-query
-https://sm2.doh.pub/dns-query
-https://doh.360.cn/dns-query
