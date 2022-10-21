@@ -1,0 +1,3 @@
+#!/bin/sh
+start-stop-daemon -S -b -o -q -m -p /opt/smartdns/smartdns.pid -x /opt/smartdns/smartdns -- -c /opt/smartdns/smartdns.conf
+exit 0

@@ -1,0 +1,107 @@
+#!/bin/bash
+
+time=`date +%Y%m%d`
+
+wget --no-check-certificate -qO /tmp/antiad.txt "https://anti-ad.net/anti-ad-for-dnsmasq.conf" && \
+echo "[Adblock Plus 2.0]" > /data/rules/antiad.txt && \
+echo "! Title: antiad(from dnsmasq)" >> /data/rules/antiad.txt && \
+echo "! Version: $time" >> /data/rules/antiad.txt && \
+cat /tmp/antiad.txt | grep -v -E "#|\.vivo\.com\.cn|\.360\.cn" | sed -e '/^address/s/^address=\/\(.*\)\/$/\|\|\1\^/'>> /data/rules/antiad.txt
+sed -i "s/||www\./||/g" /data/rules/antiad.txt
+
+wget --no-check-certificate -qO /tmp/energized_cidr.txt "https://block.energized.pro/extensions/ips/formats/list.txt" && \
+cat /tmp/energized_cidr.txt | grep -v -E "^#|192\.168\." > /tmp/energized_cidr.txt.tmp && \
+cat /tmp/energized_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/energized_cidr4.txt && \
+cat /tmp/energized_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/energized_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/energized_cidr4.txt && \
+echo "! Title: energized_cidr4(adguard)" >> /data/rules/energized_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/energized_cidr4.txt && \
+cat /tmp/energized_cidr4.txt >> /data/rules/energized_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/energized_cidr6.txt && \
+echo "! Title: energized_cidr6(adguard)" >> /data/rules/energized_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/energized_cidr6.txt && \
+cat /tmp/energized_cidr6.txt >> /data/rules/energized_cidr6.txt
+
+wget --no-check-certificate -qO /tmp/cpbl_cidr.txt "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final.cidr" && \
+cat /tmp/cpbl_cidr.txt | grep -v -E "^#|192\.168\." >> /tmp/cpbl_cidr.txt.tmp && \
+cat /tmp/cpbl_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/cpbl_cidr4.txt && \
+cat /tmp/cpbl_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/cpbl_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/cpbl_cidr4.txt && \
+echo "! Title: cpbl_cidr4(adguard)" >> /data/rules/cpbl_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/cpbl_cidr4.txt && \
+cat /tmp/cpbl_cidr4.txt >> /data/rules/cpbl_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/cpbl_cidr6.txt && \
+echo "! Title: cpbl_cidr6(adguard)" >> /data/rules/cpbl_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/cpbl_cidr6.txt && \
+cat /tmp/cpbl_cidr6.txt >> /data/rules/cpbl_cidr6.txt
+
+cat /tmp/cpbl_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1/' > /tmp/cpbl_cidr4.txt && \
+cat /tmp/cpbl_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1/' > /tmp/cpbl_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/cpbl_cidr.txt && \
+echo "! Title: cpbl_cidr(adghome)" >> /data/rules/cpbl_cidr.txt && \
+echo "! Version: $time" >> /data/rules/cpbl_cidr.txt && \
+cat /tmp/cpbl_cidr4.txt>> /data/rules/cpbl_cidr.txt && \
+cat /tmp/cpbl_cidr6.txt>> /data/rules/cpbl_cidr.txt
+
+wget --no-check-certificate -qO /tmp/ustc_cidr.txt "https://blackip.ustc.edu.cn/list.php?txt" && \
+cat /tmp/ustc_cidr.txt | grep -v -E "^#|192\.168\." >> /tmp/ustc_cidr.txt.tmp && \
+cat /tmp/ustc_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/ustc_cidr4.txt && \
+cat /tmp/ustc_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/ustc_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/ustc_cidr4.txt && \
+echo "! Title: ustc_cidr4(adguard)" >> /data/rules/ustc_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/ustc_cidr4.txt && \
+cat /tmp/ustc_cidr4.txt >> /data/rules/ustc_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/ustc_cidr6.txt && \
+echo "! Title: ustc_cidr6(adguard)" >> /data/rules/ustc_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/ustc_cidr6.txt && \
+cat /tmp/ustc_cidr6.txt >> /data/rules/ustc_cidr6.txt
+
+wget --no-check-certificate -qO /tmp/firehol2_cidr.txt "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset" && \
+cat /tmp/firehol2_cidr.txt | grep -v -E "^#|192\.168\." >> /tmp/firehol2_cidr.txt.tmp && \
+cat /tmp/firehol2_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/firehol2_cidr4.txt && \
+cat /tmp/firehol2_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/firehol2_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/firehol2_cidr4.txt && \
+echo "! Title: firehol2_cidr4(adguard)" >> /data/rules/firehol2_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/firehol2_cidr4.txt && \
+cat /tmp/firehol2_cidr4.txt >> /data/rules/firehol2_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/firehol2_cidr6.txt && \
+echo "! Title: firehol2_cidr6(adguard)" >> /data/rules/firehol2_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/firehol2_cidr6.txt && \
+cat /tmp/firehol2_cidr6.txt >> /data/rules/firehol2_cidr6.txt
+
+wget --no-check-certificate -qO /tmp/firehol3_cidr.txt "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset" && \
+cat /tmp/firehol3_cidr.txt | grep -v -E "^#|192\.168\." >> /tmp/firehol3_cidr.txt.tmp && \
+cat /tmp/firehol3_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/firehol3_cidr4.txt && \
+cat /tmp/firehol3_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/firehol3_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/firehol3_cidr4.txt && \
+echo "! Title: firehol3_cidr4(adguard)" >> /data/rules/firehol3_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/firehol3_cidr4.txt && \
+cat /tmp/firehol3_cidr4.txt >> /data/rules/firehol3_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/firehol3_cidr6.txt && \
+echo "! Title: firehol3_cidr6(adguard)" >> /data/rules/firehol3_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/firehol3_cidr6.txt && \
+cat /tmp/firehol3_cidr6.txt >> /data/rules/firehol3_cidr6.txt
+
+wget --no-check-certificate -qO /tmp/yoyo_cidr.txt "https://pgl.yoyo.org/adservers/iplist.php?ipformat=plain&showintro=1&mimetype=plaintext" && \
+cat /tmp/yoyo_cidr.txt | grep -v -E "^#|192\.168\." >> /tmp/yoyo_cidr.txt.tmp && \
+cat /tmp/yoyo_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/yoyo_cidr4.txt && \
+cat /tmp/yoyo_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1\$network/' > /tmp/yoyo_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/yoyo_cidr4.txt && \
+echo "! Title: yoyo_cidr4(adguard)" >> /data/rules/yoyo_cidr4.txt && \
+echo "! Version: $time" >> /data/rules/yoyo_cidr4.txt && \
+cat /tmp/yoyo_cidr4.txt >> /data/rules/yoyo_cidr4.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/yoyo_cidr6.txt && \
+echo "! Title: yoyo_cidr6(adguard)" >> /data/rules/yoyo_cidr6.txt && \
+echo "! Version: $time" >> /data/rules/yoyo_cidr6.txt && \
+cat /tmp/yoyo_cidr6.txt >> /data/rules/yoyo_cidr6.txt
+
+cat /tmp/yoyo_cidr.txt.tmp | grep -E "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-32])?" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1/' > /tmp/yoyo_cidr4.txt && \
+cat /tmp/yoyo_cidr.txt.tmp | grep -E "^([0-9a-z]+:)+" | sort -n | uniq | awk '!a[$0]++' | sed -e '/./s/^\(.*\)$/\1/' > /tmp/yoyo_cidr6.txt && \
+echo "[Adblock Plus 2.0]" > /data/rules/yoyo_cidr.txt && \
+echo "! Title: yoyo_cidr(adghome)" >> /data/rules/yoyo_cidr.txt && \
+echo "! Version: $time" >> /data/rules/yoyo_cidr.txt && \
+cat /tmp/yoyo_cidr4.txt >> /data/rules/yoyo_cidr.txt && \
+cat /tmp/yoyo_cidr6.txt >> /data/rules/yoyo_cidr.txt
+
+chown www-data.www-data /data/rules/*
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cd /opt/chinadns-ng
+./update-chnlist.sh && \
+./update-chnroute.sh && \
+./update-gfwlist.sh
+
+if [ "$?" != "0" ];then
+	exit 1
+fi
+
+if [ `/sbin/ipset list -n|grep -cw chnroute` -eq 0 ] ; then
+	/sbin/ipset -exist create chnroute hash:net family inet
+	/sbin/ipset -F chnroute && /sbin/ipset -R -exist < /opt/chinadns-ng/chnroute.ipset
+fi
+
+if [ `/sbin/ipset list -n|grep -cw chnroute6` -eq 0 ] ; then
+	/sbin/ipset -exist create chnroute6 hash:net family inet6
+	/sbin/ipset -F chnroute6 && /sbin/ipset -R -exist < /opt/chinadns-ng/chnroute6.ipset
+fi
+
+exit 0

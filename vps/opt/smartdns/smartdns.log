@@ -1,0 +1,2 @@
+start-stop-daemon: --make-pidfile requires --pidfile
+Try 'start-stop-daemon --help' for more information.

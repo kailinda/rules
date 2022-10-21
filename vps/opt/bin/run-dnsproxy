@@ -1,0 +1,31 @@
+#!/bin/bash
+
+/sbin/start-stop-daemon -S -c nobody -b -o -q -m \
+-p /opt/dnsproxy/dnsproxy.pid \
+-x /opt/dnsproxy/dnsproxy -- \
+-l 127.0.0.1 -p 5601 \
+-u /opt/dnsproxy/cn-lite-tls-domain.txt \
+-f 223.6.6.6 \
+-f 119.29.29.29 \
+-b 114.114.114.114 \
+-b 1.2.4.8 \
+--all-servers \
+--edns \
+--cache \
+--cache-size=134217728 \
+--cache-min-ttl=21600 \
+--cache-optimistic \
+--fastest-addr
+
+/sbin/start-stop-daemon -S -n gateway -c nobody -b -o -q -m \
+-p /opt/dnsproxy/dnsproxy-getway.pid \
+-x /opt/dnsproxy/dnsproxy -- \
+-l 0.0.0.0 -p 5333 \
+-u 127.0.0.1:5301 \
+--all-servers \
+--edns \
+--cache \
+--cache-size=134217728 \
+--cache-min-ttl=21600 \
+--cache-optimistic \
+--fastest-addr
