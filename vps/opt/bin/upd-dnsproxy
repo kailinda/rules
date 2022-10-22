@@ -1,17 +1,19 @@
 #!/bin/bash
 NOW=`date '+%Y%m%d%-H%M%S'`
-URL=`curl -4sSkL --retry 3 https://api.github.com/repos/AdguardTeam/dnsproxy/releases/latest|jq -r '.assets[]| select(.name|contains("dnsproxy-linux-amd64-"))|.browser_download_url'` && \
-curl -4sSkL --retry 10 -o /opt/dnsproxy/upd/dnsproxy-$NOW.tar.gz "$URL" && \
+URL=`curl -4sSkL --retry 3 https://api.github.com/repos/AdguardTeam/dnsproxy/releases/latest|jq -r '.assets[]| select(.name|contains("dnsproxy-linux-amd64-"))|.browser_download_url'`
+echo "wget --no-check-certificate -O /opt/dnsproxy/upd/dnsproxy-$NOW.tar.gz $URL"
+wget --no-check-certificate -O /opt/dnsproxy/upd/dnsproxy-$NOW.tar.gz "$URL" && \
 tar -zxf /opt/dnsproxy/upd/dnsproxy-$NOW.tar.gz -C /opt/dnsproxy/upd/
 if [ $? -eq 0 ];then 
 	NEW_MD5=`md5sum /opt/dnsproxy/upd/linux-amd64/dnsproxy | cut -f 1 -d ' '`
 	OLD_MD5=`md5sum /opt/dnsproxy/dnsproxy | cut -f 1 -d ' '`
 	if [ "$NEW_MD5" != "$OLD_MD5" ] ;then
-		ps -ef|grep dnsproxy|grep -v grep|awk '{print $2}'|xargs kill -9
 		cp -af /opt/dnsproxy/dnsproxy /opt/dnsproxy/bak/dnsproxy-$NOW.bak
 		cp -af /opt/dnsproxy/upd/linux-amd64/dnsproxy /opt/dnsproxy/dnsproxy
 		chmod 755 /opt/dnsproxy/dnsproxy
-		/opt/bin/run-dnsproxy
+		. /opt/bin/run-dnsproxy
+	else
+		echo "dnsproxy新旧MD5一致！"
 	fi
 fi
 rm -rf /opt/dnsproxy/upd/*

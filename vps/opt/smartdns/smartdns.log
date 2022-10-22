@@ -1,2 +1,506 @@
 start-stop-daemon: --make-pidfile requires --pidfile
 Try 'start-stop-daemon --help' for more information.
+[2022-10-22 13:53:19,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:19,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:19,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:22,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:22,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:22,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:25,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:25,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:25,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:28,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:28,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:28,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:31,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:31,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:31,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:34,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:34,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:34,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:37,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:37,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:37,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:40,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:40,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:40,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:43,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:43,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:43,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:46,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:46,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:46,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:49,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:49,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:49,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:52,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:52,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:52,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:55,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:55,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:55,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:53:58,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:53:58,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:53:58,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:01,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:01,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:01,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:04,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:04,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:04,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:07,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:07,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:07,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:10,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:10,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:10,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:13,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:13,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:13,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:16,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:16,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:16,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:19,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:19,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:19,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:22,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:22,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:22,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:25,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:25,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:25,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:28,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:28,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:28,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:31,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:31,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:31,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:34,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:34,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:34,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:37,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:37,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:37,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:40,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:40,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:40,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:43,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:43,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:43,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:46,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:46,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:46,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:49,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:49,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:49,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:52,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:52,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:52,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:55,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:55,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:55,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:54:58,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:54:58,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:54:58,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:01,758][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:01,758][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:01,758][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:04,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:04,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:04,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:07,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:07,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:07,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:10,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:10,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:10,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:13,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:13,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:13,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:16,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:16,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:16,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:19,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:19,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:19,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:55:22,759][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:55:22,759][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:55:22,759][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:41,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:41,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:41,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:44,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:44,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:44,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:47,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:47,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:47,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:50,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:50,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:50,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:53,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:53,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:53,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:56,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:56,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:56,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:57:59,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:57:59,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:57:59,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:03,017][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:03,017][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:03,017][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:05,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:05,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:05,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:08,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:08,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:08,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:11,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:11,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:11,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:14,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:14,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:14,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:17,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:17,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:17,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:20,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:20,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:20,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:23,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:23,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:23,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:26,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:26,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:26,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:29,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:29,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:29,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:32,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:32,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:32,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:35,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:35,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:35,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:38,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:38,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:38,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:41,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:41,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:41,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:44,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:44,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:44,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:47,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:47,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:47,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:50,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:50,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:50,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:53,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:53,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:53,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:56,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:56,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:56,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:58:59,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:58:59,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:58:59,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:02,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:02,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:02,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:05,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:05,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:05,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:08,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:08,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:08,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:11,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:11,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:11,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:14,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:14,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:14,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:17,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:17,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:17,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:20,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:20,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:20,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:23,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:23,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:23,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:26,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:26,974][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:26,974][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:29,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:29,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:29,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:32,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:32,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:32,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:35,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:35,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:35,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:38,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:38,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:38,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:41,972][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:41,972][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:41,972][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 13:59:44,973][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 13:59:44,973][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 13:59:44,973][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:13:55,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:13:55,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:13:55,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:13:58,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:13:58,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:13:58,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:01,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:01,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:01,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:04,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:04,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:04,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:07,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:07,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:07,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:10,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:10,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:10,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:13,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:13,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:13,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:16,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:16,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:16,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:19,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:19,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:19,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:22,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:22,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:22,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:25,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:25,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:25,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:28,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:28,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:28,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:31,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:31,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:31,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:34,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:34,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:34,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:37,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:37,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:37,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:40,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:40,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:40,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:43,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:43,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:43,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:46,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:46,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:46,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:49,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:49,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:49,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:52,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:52,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:52,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:55,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:55,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:55,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:14:58,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:14:58,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:14:58,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:01,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:01,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:01,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:04,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:04,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:04,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:07,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:07,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:07,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:10,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:10,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:10,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:13,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:13,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:13,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:16,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:16,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:16,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:19,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:19,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:19,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:22,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:22,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:22,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:25,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:25,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:25,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:28,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:28,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:28,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:31,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:31,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:31,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:34,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:34,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:34,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:37,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:37,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:37,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:40,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:40,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:40,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:43,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:43,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:43,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:46,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:46,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:46,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:49,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:49,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:49,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:52,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:52,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:52,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:55,788][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:55,788][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:55,788][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 14:15:58,789][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 14:15:58,789][ERROR][     dns_server.c:4127] send dns request failed.
+[2022-10-22 14:15:58,789][ERROR][     dns_server.c:4328] do query tls failed.
+[2022-10-22 15:35:19,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:19,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:19,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:22,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:22,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:22,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:25,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:25,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:25,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:28,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:28,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:28,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:31,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:31,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:31,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:34,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:34,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:34,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:37,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:37,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:37,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:40,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:40,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:40,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:43,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:43,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:43,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:46,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:46,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:46,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:49,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:49,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:49,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:52,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:52,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:52,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:55,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:55,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:55,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:35:58,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:35:58,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:35:58,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:01,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:01,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:01,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:04,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:04,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:04,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:07,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:07,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:07,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:10,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:10,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:10,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:13,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:13,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:13,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:16,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:16,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:16,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:19,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:19,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:19,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:22,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:22,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:22,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:25,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:25,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:25,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:28,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:28,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:28,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:31,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:31,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:31,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:34,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:34,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:34,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:37,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:37,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:37,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:40,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:40,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:40,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:43,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:43,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:43,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:46,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:46,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:46,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:49,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:49,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:49,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:52,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:52,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:52,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:55,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:55,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:55,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:36:58,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:36:58,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:36:58,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:01,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:01,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:01,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:04,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:04,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:04,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:07,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:07,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:07,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:10,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:10,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:10,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:13,593][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:13,593][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:13,593][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:16,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:16,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:16,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:19,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:19,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:19,594][ERROR][     dns_server.c:4335] do query tls failed.
+[2022-10-22 15:37:22,594][ERROR][     dns_client.c:2913] Send query to upstream server failed, total server number 0
+[2022-10-22 15:37:22,594][ERROR][     dns_server.c:4134] send dns request failed.
+[2022-10-22 15:37:22,594][ERROR][     dns_server.c:4335] do query tls failed.
