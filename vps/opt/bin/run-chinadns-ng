@@ -10,4 +10,7 @@ if [ `/sbin/ipset list -n|grep -cw chnroute6` -eq 0 ] ; then
 	/sbin/ipset -F chnroute6 && /sbin/ipset -R -exist < /opt/chinadns-ng/chnroute6.ipset
 fi
 /sbin/start-stop-daemon -K -n chinadns-ng >/dev/null 2>&1
+
+sleep 3
+
 /sbin/start-stop-daemon -S -n chinadns-ng -c nobody -b -o -q -m -p /opt/chinadns-ng/chinadns-ng.pid -x /opt/chinadns-ng/chinadns-ng -- -b 127.0.0.1 -l 5301 -c 127.0.0.1#5601 -t 127.0.0.1#5602 -4 chnroute -6 chnroute6 -f -M -m /opt/chinadns-ng/chnlist.txt

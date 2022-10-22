@@ -1,6 +1,8 @@
 #!/bin/bash
 start-stop-daemon -K -n dnsproxy >/dev/null 2>&1
 
+sleep 3
+
 start-stop-daemon -S -c nobody -b -o -q -m \
 -p /opt/dnsproxy/dnsproxy-china.pid \
 -x /opt/dnsproxy/dnsproxy -- \
