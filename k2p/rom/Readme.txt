@@ -6,11 +6,6 @@
 网络相关内核参数优化
 添加storage下started.d、wan.d、firewall.d和shutdown.d四个入口
 
-待升级：
-没用开启zram,kvr,dig
-默认未劫持53端口，如需要可刷storage
-
-
 storage添加智能dns
 需要dnsmasq=>chinadns-ng=>smartdns方案可以恢复Storage_K2P(开启dns加速)备份包
 * dnsmasq 判断是否gfwlist，如果是，则调用smartdns的5602端口，走可信dns
@@ -25,3 +20,8 @@ storage添加网络参数
 echo 32768 > /proc/sys/net/core/somaxconn
 echo 16384 > /proc/sys/net/core/netdev_max_backlog
 echo 16384 > /proc/sys/net/ipv4/tcp_max_syn_backlog
+
+
+待升级：
+没用开启zram,kvr,dig
+默认未劫持53端口，如需要可刷storage
