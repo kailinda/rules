@@ -11,7 +11,8 @@ if [ `/sbin/ipset list -n|grep -cw chnroute6` -eq 0 ] ; then
 fi
 
 /sbin/start-stop-daemon -K -n chinadns-ng >/dev/null 2>&1
-/sbin/start-stop-daemon -S -n chinadns-ng -c nobody -b -o -q -m -p /tmp/chinadns-ng.pid -x /usr/bin/chinadns-ng -- -b 127.0.0.1 -l 5501 -c 127.0.0.1#5601 -t 127.0.0.1#5602 -4 chnroute -6 chnroute6 -f -M -m /etc/storage/chinadns/chnlist.txt && \
+sleep 3
+/sbin/start-stop-daemon -S -c nobody -b -o -q -m -p /tmp/chinadns-ng.pid -x /usr/bin/chinadns-ng -- -b 127.0.0.1 -l 5301 -c 127.0.0.1#5601 -t 127.0.0.1#5602 -4 chnroute -6 chnroute6 -f -g /etc/storage/chinadns/gfwlist.txt -m /etc/storage/chinadns/chnlist.txt && \
 logger -t "【CHINA_DNS_NG】" "chinadns-ng启动,成功 ~~~" || \
 { logger -t "【CHINA_DNS_NG】" "chinadns-ng启动,失败 !!!";exit 1;}
 exit 0

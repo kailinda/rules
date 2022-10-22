@@ -50,6 +50,10 @@ echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_last_ack
 echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait
 echo 30 > /proc/sys/net/netfilter/nf_conntrack_tcp_timeout_close
 
+echo 32768 > /proc/sys/net/core/somaxconn
+echo 16384 > /proc/sys/net/core/netdev_max_backlog
+echo 16384 > /proc/sys/net/ipv4/tcp_max_syn_backlog
+
 # panic
 echo 1        > /proc/sys/kernel/panic
 echo 1        > /proc/sys/kernel/panic_on_oops

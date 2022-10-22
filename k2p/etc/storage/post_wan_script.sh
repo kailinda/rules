@@ -8,6 +8,7 @@
 
 if [ "$1" == "up" ] ; then
 /usr/bin/irqbalance 0
+/etc/storage/start_script.sh
 logger -t "【WAN脚本】" "设置除lo之外的网卡 mtu=1492 ..." 
 /sbin/ifconfig |grep "Link encap" |awk '{print $1}'|grep -v "lo"|sed -e 's/^/ifconfig /' -e 's/$/ mtu 1492 up/'| /bin/sh
 	if [ ! -f '/tmp/wan.up.lock' ] ; then
