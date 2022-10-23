@@ -5,6 +5,7 @@
 ### $1 - Internet status (0/1)
 ### $2 - elapsed time (s) from previous state
 
+logger_title="[WAN状态改变]"
 logger -t "【WAN脚本】" "网络状态: $1, 间隔时间: $2s."
 if [ "$1" == "0" ];then
 # 网络不通，红灯

@@ -6,16 +6,17 @@
 ### $2 - WAN interface name (e.g. eth3 or ppp0)
 ### $3 - WAN IPv4 address
 
+logger_title="[WAN已开启]"
 if [ "$1" == "up" ] ; then
-/usr/bin/irqbalance 0
-/etc/storage/start_script.sh
+flock -xn /tmp/irqbalance.lock /usr/bin/irqbalance 0 &
+flock -xn /tmp/before_started.lock /etc/storage/start_script.sh &
 logger -t "【WAN脚本】" "设置除lo之外的网卡 mtu=1492 ..." 
 /sbin/ifconfig |grep "Link encap" |awk '{print $1}'|grep -v "lo"|sed -e 's/^/ifconfig /' -e 's/$/ mtu 1492 up/'| /bin/sh
 	if [ ! -f '/tmp/wan.up.lock' ] ; then
 		touch /tmp/wan.up.lock
 		logger -t "【WAN脚本】" "批量执行WAN初始化脚本集合 ..."
 		[ ! -d '/etc/storage/wan.d' ] && mkdir -p /etc/storage/wan.d
-		[ -d '/etc/storage/wan.d' ] && find /etc/storage/wan.d -type f -perm /111 -exec {} \;
+		sleep 3 && flock -xn /tmp/post_wan.lock find /etc/storage/wan.d -type f -perm /111 -exec {} \; &
 	fi
 else
 	rm -f /tmp/wan.up.lock

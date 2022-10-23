@@ -5,5 +5,5 @@
 
 logger -t "【FireWall脚本】" "批量执行FireWall初始化脚本集合 ..."
 [ ! -d '/etc/storage/firewall.d' ] && mkdir -p /etc/storage/firewall.d
-[ -d '/etc/storage/firewall.d' ] && find /etc/storage/firewall.d -type f -perm /111 -exec {} \;
+flock -xn /tmp/post_firewall.lock find /etc/storage/firewall.d -type f -perm /111 -exec {} \; &
 

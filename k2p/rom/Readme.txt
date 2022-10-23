@@ -4,7 +4,7 @@
 修正了mtd_storage脚本，恢复出厂使用自己的脚本
 添加了irqbalance脚本，优化CPU使用，默认用rc再started脚本之前运行，并添加到网络改变事件
 网络相关内核参数优化
-添加storage下started.d、wan.d、firewall.d和shutdown.d四个入口
+添加storage下started.d、wan.d、firewall.d和shutdown.d四个入口，并采用异步式执行
 
 storage添加智能dns
 需要dnsmasq=>chinadns-ng=>smartdns方案可以恢复Storage_K2P(开启dns加速)备份包
