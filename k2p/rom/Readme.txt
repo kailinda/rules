@@ -25,3 +25,6 @@ echo 16384 > /proc/sys/net/ipv4/tcp_max_syn_backlog
 待升级：
 没用开启zram,kvr,dig
 默认未劫持53端口，如需要可刷storage
+
+待操作：
+需要把uplist的计划任务改为每15天执行一次，storage里默认是每天
