@@ -151,10 +151,6 @@ filters:
     url: http://43.140.222.171/cpbl_cidr.txt
     name: cpbl_cidr
     id: 1666055065
-  - enabled: true
-    url: https://raw.fastgit.org/hacamer/filtering/master/hosts
-    name: fastgit
-    id: 1666523352
 whitelist_filters: []
 user_rules:
   - '||2345.com^'
