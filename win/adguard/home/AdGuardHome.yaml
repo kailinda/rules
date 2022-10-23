@@ -58,8 +58,8 @@ dns:
     - 223.6.6.6
     - 119.29.29.29
     - 114.114.114.114
-  all_servers: true
-  fastest_addr: false
+  all_servers: false
+  fastest_addr: true
   fastest_timeout: 1s
   allowed_clients: []
   disallowed_clients: []
@@ -151,6 +151,10 @@ filters:
     url: http://43.140.222.171/cpbl_cidr.txt
     name: cpbl_cidr
     id: 1666055065
+  - enabled: true
+    url: https://raw.fastgit.org/hacamer/filtering/master/hosts
+    name: fastgit
+    id: 1666523352
 whitelist_filters: []
 user_rules:
   - '||2345.com^'
