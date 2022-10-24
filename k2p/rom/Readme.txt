@@ -5,6 +5,12 @@
 添加了irqbalance脚本，优化CPU使用，默认用rc再started脚本之前运行，并添加到网络改变事件
 网络相关内核参数优化
 添加storage下started.d、wan.d、firewall.d和shutdown.d四个入口，并采用异步式执行
+添加start.d事件执行目录
+恢复storage时，自动添加authorized_keys内容
+更改默认shell搜索路径path
+添加/etc/storage/bin/sysctl硬链接到/etc/storage/start_script.sh
+添加yonsm的dnsmasq修复版本，修复tcp的crash问题
+添加fanjunjie硬链接到admin计划任务
 
 storage添加智能dns
 需要dnsmasq=>chinadns-ng=>smartdns方案可以恢复Storage_K2P(开启dns加速)备份包
@@ -15,16 +21,8 @@ storage添加智能dns
 				如果是国外区域，则走可信dns,继续调用smartdns的5602端口
 				如果是国内区域，则走国内dns，调用smartdns的5601端口
   优点是既可以利用gfwlist加速国外dns，也可以在gfwlist之外的情况智能判断
-  
-storage添加网络参数
-echo 32768 > /proc/sys/net/core/somaxconn
-echo 16384 > /proc/sys/net/core/netdev_max_backlog
-echo 16384 > /proc/sys/net/ipv4/tcp_max_syn_backlog
 
 
 待升级：
 没用开启zram,kvr,dig
 默认未劫持53端口，如需要可刷storage
-
-待操作：
-需要把uplist的计划任务改为每15天执行一次，storage里默认是每天

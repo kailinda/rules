@@ -9,7 +9,7 @@
 logger_title="[WAN已开启]"
 if [ "$1" == "up" ] ; then
 flock -xn /tmp/irqbalance.lock /usr/bin/irqbalance 0 &
-flock -xn /tmp/before_started.lock /etc/storage/start_script.sh &
+flock -xn /tmp/sysctl.lock /etc/storage/bin/sysctl &
 logger -t "【WAN脚本】" "设置除lo之外的网卡 mtu=1492 ..." 
 /sbin/ifconfig |grep "Link encap" |awk '{print $1}'|grep -v "lo"|sed -e 's/^/ifconfig /' -e 's/$/ mtu 1492 up/'| /bin/sh
 	if [ ! -f '/tmp/wan.up.lock' ] ; then

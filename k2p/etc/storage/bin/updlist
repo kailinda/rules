@@ -11,6 +11,7 @@ raw_fastgit_net_code=`ping -4 -c 5 -w 10 raw.fastgit.org >/dev/null 2>&1 && echo
 ret_r=0
 logger -t "【ADBLOCK】" "更新bogus-nxdomain.conf ..."
 if [ "x$raw_fastgit_net_code" = "x1" ] ; then
+	[ ! -d /etc/storage/dnsmasq/conf.d ] && mkdir -p /etc/storage/dnsmasq/conf.d
 	NX_URL='https://raw.fastgit.org/felixonmars/dnsmasq-china-list/master/bogus-nxdomain.china.conf'
 	curl -4sSkL --retry 3 -o /tmp/bogus-nxdomain.conf.tmp $NX_URL && \
 	mv -f /tmp/bogus-nxdomain.conf.tmp /etc/storage/dnsmasq/conf.d/bogus-nxdomain.conf && \

@@ -4,8 +4,8 @@
 if [ "$PS1" ] ; then
     export PS1='\h:\w \$ '
     #export PATH=/opt/sbin:/opt/bin:/usr/sbin:/usr/bin:/sbin:/bin
-	export PATH=/etc/storage/bin:/opt/sbin:/opt/bin:/usr/sbin:/usr/bin:/sbin:/bin
-	export LD_LIBRARY_PATH=/etc/storage/lib:/opt/lib:/usr/lib:/lib
+	export PATH=/opt/sbin:/opt/bin:/etc/storage/bin:/usr/sbin:/usr/bin:/sbin:/bin
+	export LD_LIBRARY_PATH=/opt/lib:/etc/storage/lib:/usr/lib:/lib
 	export HOSTNAME=`/bin/hostname`
     export TERMINFO=/usr/share/terminfo
     export TERM=xterm
