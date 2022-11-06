@@ -73,7 +73,7 @@ dns:
   cache_size: 268435456
   cache_ttl_min: 14400
   cache_ttl_max: 14400
-  cache_optimistic: false
+  cache_optimistic: true
   bogus_nxdomain: []
   aaaa_disabled: true
   enable_dnssec: false
@@ -151,6 +151,14 @@ filters:
     url: http://43.140.222.171/cpbl_cidr.txt
     name: cpbl_cidr
     id: 1666055065
+  - enabled: true
+    url: http://43.140.222.171/antiad.txt
+    name: 'CHN: anti-AD (My)'
+    id: 1666661428
+  - enabled: true
+    url: http://43.140.222.171/yoyo_cidr.txt
+    name: yoyo_cidr
+    id: 1667351857
 whitelist_filters: []
 user_rules:
   - '||2345.com^'
