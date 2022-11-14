@@ -1,0 +1,201 @@
+bind_host: 127.0.0.1
+bind_port: 80
+beta_bind_port: 0
+users:
+  - name: wells
+    password: $2a$10$.kWlUE0yLlOPpzavvQEG2ewwM0cv.JVEGdqo6YeSRZWuGl0BdHY/C
+auth_attempts: 5
+block_auth_min: 15
+http_proxy: ""
+language: ""
+debug_pprof: false
+web_session_ttl: 720
+dns:
+  bind_hosts:
+    - 0.0.0.0
+  port: 53
+  statistics_interval: 1
+  querylog_enabled: true
+  querylog_file_enabled: true
+  querylog_interval: 24h
+  querylog_size_memory: 1000
+  anonymize_client_ip: false
+  protection_enabled: true
+  blocking_mode: nxdomain
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 10
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: true
+  upstream_dns:
+    - '# Localhost'
+    - 127.0.0.1:5333
+    - '# TecentYun 43.140.222.171:5333 tcp://43.140.222.171:5333'
+    - tcp://43.140.222.171:5333
+    - '# IBM tcp://9.9.9.11:9953'
+    - '# AdGuard tcp://94.140.14.140:5353 tcp://94.140.14.141:5353'
+    - '# tcp://94.140.14.140:5353'
+    - '# OpenDNS tcp://208.67.220.220:443 tcp://208.67.222.222:443'
+    - '# tcp://208.67.220.220:443'
+    - '# Quad tls://101.101.101.101'
+    - '# tls://101.101.101.101 可以优先开启，但没用加速效果，故只作保留'
+    - '# Comodo tcp://8.26.56.26:443 tcp://8.20.247.20:443'
+    - '# Clouflare tls://1.1.1.1'
+    - '# dnsenc https://dnsenc.com/dns-query tls://dnsenc.com'
+    - https://dnsenc.com/dns-query
+    - '# AliDNS tcp://223.5.5.5:53'
+    - '# Tencent tcp://119.29.29.29:53'
+    - '# 114 tcp://114.114.115.115:53'
+    - '# Google tcp://8.8.4.4:53 tcp://8.8.8.8:53'
+    - '# OneDNS tcp://52.80.52.52:53'
+    - '# Norton tcp://199.85.126.10:53  tcp://199.85.127.10:53'
+    - '# LocalHost 192.168.2.1:53'
+    - '# Apad(网友)'
+    - '# - 高级：tls://edns.apad.pro:853 https://edns.apad.pro:3306/dns-query'
+    - '# - 纯净：https://doh.apad.pro/dns-query https://doh.apad.pro/cdn-query'
+    - https://doh.apad.pro/cdn-query
+  upstream_dns_file: ""
+  bootstrap_dns:
+    - 223.6.6.6
+    - 119.29.29.29
+    - 114.114.114.114
+  all_servers: true
+  fastest_addr: false
+  fastest_timeout: 1s
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts:
+    - version.bind
+    - id.server
+    - hostname.bind
+  trusted_proxies:
+    - 127.0.0.0/8
+    - ::1/128
+  cache_size: 268435456
+  cache_ttl_min: 14400
+  cache_ttl_max: 14400
+  cache_optimistic: true
+  bogus_nxdomain: []
+  aaaa_disabled: true
+  enable_dnssec: false
+  edns_client_subnet: false
+  max_goroutines: 300
+  handle_ddr: true
+  ipset: []
+  ipset_file: ""
+  filtering_enabled: true
+  filters_update_interval: 24
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  rewrites: []
+  blocked_services: []
+  upstream_timeout: 2s
+  private_networks: []
+  use_private_ptr_resolvers: true
+  local_ptr_upstreams: []
+  serve_http3: false
+  use_http3_upstreams: false
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 443
+  port_dns_over_tls: 853
+  port_dns_over_quic: 853
+  port_dnscrypt: 0
+  dnscrypt_config_file: ""
+  allow_unencrypted_doh: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+  strict_sni_check: false
+filters:
+  - enabled: true
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+    name: AdGuard DNS filter
+    id: 1
+  - enabled: true
+    url: https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+    name: WindowsSpyBlocker - Hosts spy rules
+    id: 1655430891
+  - enabled: true
+    url: https://cdn.jsdelivr.net/gh/bongochong/CombinedPrivacyBlockLists@master/cpbl-abp-list.txt
+    name: CPBLFilter
+    id: 1657588366
+  - enabled: true
+    url: http://43.140.222.171/antiad.txt
+    name: 'CHN: anti-AD (My)'
+    id: 1666661428
+  - enabled: true
+    url: https://raw.fastgit.org/damengzhu/banad/main/dnslist.txt
+    name: damengzhu
+    id: 1667784184
+whitelist_filters: []
+user_rules:
+  - '||2345.com^'
+  - '||2345.cc^'
+  - '||2345.cn^'
+  - '||2345.net^'
+  - '||cnnic.net.cn^'
+  - '||cnnic.cn^'
+  - '||cnnic.net^'
+  - '||cnnic.com^'
+  - '||geo2.adobe.com^'
+  - '||flash.cn^'
+  - '||www.flash.cn^'
+  - '||play.kakao.com^'
+  - '||adverweb.cjenm.com^'
+  - '||videofarm.daum.net^'
+  - '||dad.daum.net^'
+  - '||play.kakao.com^'
+  - '||edge4k.com^'
+  - '||potplayer.tv^'
+  - '||potplayer.io^'
+  - '||potplayer.app^'
+  - ""
+dhcp:
+  enabled: false
+  interface_name: ""
+  local_domain_name: lan
+  dhcpv4:
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
+    lease_duration: 0
+    icmp_timeout_msec: 0
+    options: []
+  dhcpv6:
+    range_start: ""
+    lease_duration: 0
+    ra_slaac_only: false
+    ra_allow_slaac: false
+clients:
+  runtime_sources:
+    whois: true
+    arp: true
+    rdns: true
+    dhcp: true
+    hosts: true
+  persistent: []
+log_file: ""
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
+log_compress: false
+log_localtime: false
+verbose: false
+os:
+  group: ""
+  user: ""
+  rlimit_nofile: 0
+schema_version: 14
